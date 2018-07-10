@@ -54,16 +54,16 @@ export class MenuComponent {
     public translate: TranslateService) {
   }
 
-  addMenuItem(): void {
-    this.menuService.add({
-      state: 'menu',
-      name: 'MENU',
-      type: 'sub',
-      icon: 'trending_flat',
-      children: [
-        {state: 'menu', name: 'MENU'},
-        {state: 'timeline', name: 'MENU'}
-      ]
-    });
-  }
+  // addMenuItem(): void {
+  //   this.menuService.add({
+  //     state: 'menu',
+  //     name: 'MENU',
+  //     type: 'sub',
+  //     icon: 'trending_flat',
+  //     children: [
+  //       {state: 'menu', name: 'MENU'},
+  //       {state: 'timeline', name: 'MENU'}
+  //     ]
+  //   });
+  // }
 }
