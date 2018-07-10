@@ -28,9 +28,9 @@ export class AdminLayoutComponent implements OnInit, OnDestroy {
 
   options = {
     lang: 'en',
-    theme: 'winter',
+    theme: 'eclipse',
     settings: false,
-    docked: false,
+    docked: true,
     boxed: false,
     opened: false
   };
