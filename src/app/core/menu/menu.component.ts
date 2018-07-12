@@ -10,22 +10,22 @@ import { TranslateService } from '@ngx-translate/core';
     <div *ngFor="let menuitem of menuService.getAll()">
       <li class="navigation-item" appAccordionLink group="{{menuitem.state}}" *ngIf="menuitem.type !== 'divider' || menuitem.type !== 'title'">
         <a class="navigation-link" appAccordionToggle [routerLink]="['/', menuitem.state]" *ngIf="menuitem.type === 'link'">
-          <i class="icon {{ menuitem.icon }} mr-3"></i>
+          <i class="{{ menuitem.icon }} icon mr-3"></i>
           <span class="title mr-auto">{{ menuitem.name | translate }}</span>
           <span class="badge badge-{{ badge.type }} mr-3" *ngFor="let badge of menuitem.badge">{{ badge.value }}</span>
         </a>
         <a class="navigation-link" appAccordionToggle href="{{menuitem.state}}" *ngIf="menuitem.type === 'extLink'">
-          <i class="icon {{ menuitem.icon }} mr-3"></i>
+          <i class="{{ menuitem.icon }} icon mr-3"></i>
           <span class="title mr-auto">{{ menuitem.name | translate }}</span>
           <span class="badge badge-{{ badge.type }} mr-3" *ngFor="let badge of menuitem.badge">{{ badge.value }}</span>
         </a>
         <a class="navigation-link" appAccordionToggle href="{{menuitem.state}}" target="_blank" *ngIf="menuitem.type === 'extTabLink'">
-          <i class="icon {{ menuitem.icon }} mr-3"></i>
+          <i class="{{ menuitem.icon }} icon mr-3"></i>
           <span class="title mr-auto">{{ menuitem.name | translate }}</span>
           <span class="badge badge-{{ badge.type }} mr-3" *ngFor="let badge of menuitem.badge">{{ badge.value }}</span>
         </a>
         <a class="navigation-link" appAccordionToggle href="javascript:;" *ngIf="menuitem.type === 'sub'">
-          <i class="icon {{ menuitem.icon }} mr-3"></i>
+          <i class="{{ menuitem.icon }} icon mr-3"></i>
           <span class="title mr-auto">{{ menuitem.name | translate }}</span>
           <span class="badge badge-{{ badge.type }} mr-3" *ngFor="let badge of menuitem.badge">{{ badge.value }}</span>
           <i class="menu-caret icon ion-ios-arrow-down"></i>

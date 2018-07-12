@@ -62,6 +62,7 @@ mat-sidenav.sidebar-panel {
       display: flex;
       flex-direction: row;
       align-items: center;
+      text-align: center;
       white-space: nowrap;
       transition: background $transition-duration, color $transition-duration;
       @include hover-focus {
@@ -72,7 +73,7 @@ mat-sidenav.sidebar-panel {
       }
       [class^="ion-"]:not(.menu-caret),
       [class*=" ion-"]:not(.menu-caret) {
-        width: 20px;
+        // width: 20px;
         text-align: center;
         line-height: 1;
         font-size: 1.2rem;
@@ -168,6 +169,8 @@ mat-sidenav.sidebar-panel {
           span:not(.custom-control-label), .menu-caret {
             display: none;
           }
+          [class^="fas "]:not(.menu-caret),
+          [class^="fa "]:not(.menu-caret),
           [class^="ion-"]:not(.menu-caret),
           [class*=" ion-"]:not(.menu-caret) {
             margin: 0!important;

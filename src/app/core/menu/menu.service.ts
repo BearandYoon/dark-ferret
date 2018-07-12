@@ -29,7 +29,7 @@ const MENUITEMS = [
     state: '/',
     name: 'HOME',
     type: 'link',
-    icon: 'ion-ios-speedometer'
+    icon: 'fa fa-tachometer'
   },
   // {
   //   state: 'docs',
@@ -37,9 +37,9 @@ const MENUITEMS = [
   //   type: 'link',
   //   icon: 'ion-ios-help'
   // },
-  {
-    type: 'divider'
-  },
+  // {
+  //   type: 'divider'
+  // },
   // {
   //   type: 'title',
   //   name: 'APPS'
@@ -48,7 +48,7 @@ const MENUITEMS = [
     state: 'email',
     name: 'EMAIL',
     type: 'link',
-    icon: 'ion-ios-email',
+    icon: 'fa fa-th-list',
     badge: [
       {
         type: 'warning',
@@ -62,12 +62,12 @@ const MENUITEMS = [
     type: 'link',
     icon: 'ion-ios-person'
   },
-  // {
-  //   state: 'calendar',
-  //   name: 'CALENDAR',
-  //   type: 'link',
-  //   icon: 'ion-ios-calendar'
-  // },
+  {
+    state: 'calendar',
+    name: 'CALENDAR',
+    type: 'link',
+    icon: 'fa fa-cog'
+  },
   // {
   //   state: 'taskboard',
   //   name: 'TASKBOARD',

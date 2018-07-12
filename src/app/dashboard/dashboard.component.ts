@@ -29,9 +29,7 @@ export class DashboardComponent {
   showLegend = false;
   showXAxisLabel = false;
   tooltipDisabled = false;
-  xAxisLabel = 'Country';
   showYAxisLabel = false;
-  yAxisLabel = 'GDP Per Capita';
   showGridLines = true;
   innerPadding = 0;
   barPadding = 8;
@@ -43,16 +41,9 @@ export class DashboardComponent {
   // line interpolation
   curve = shape.curveBasis;
 
-  // pie
-  showLabels = true;
-  explodeSlices = true;
-  doughnut = false;
-  arcWidth = 0.25;
-
   colorScheme = {
     domain: colors
   };
-
   schemeType = 'ordinal';
   rangeFillOpacity = 0.15;
 
@@ -60,10 +51,46 @@ export class DashboardComponent {
   autoScale = true;
   timeline = false;
 
+  allPosts = [{
+    name: 'All Posts',
+    value: 2814
+  }];
+  twitterPosts = [{
+    name: 'Twitter Posts',
+    value: 1350
+  }];
+  facebookPosts = [{
+    name: 'Facebook Posts',
+    value: 430
+  }];
+  instagramPosts = [{
+    name: 'Instagram Posts',
+    value: 1034
+  }];
+  totalPosts = 5000;
+
+  allPostColorScheme = {
+    domain: ['#4f6f18']
+  };
+  twitterPostColorScheme = {
+    domain: ['#3e5574']
+  };
+  facebookPostColorScheme = {
+    domain: ['#44569c']
+  };
+  instagramPostColorScheme = {
+    domain: ['#c03395']
+  };
+
+  lat = -34.397;
+  lng = 150.644;
+  latA = -34.754764;
+  lngA = 149.736246;
+  zoom = 8;
+
   constructor() {
     Object.assign(this, {
       single,
-      graph: generateGraph(50),
       multi
     });
 

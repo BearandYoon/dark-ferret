@@ -9,6 +9,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatSidenavModule } from '@angular/material';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 
@@ -58,7 +59,8 @@ export function createTranslateLoader(http: HttpClient) {
     }),
     LoadingBarRouterModule,
     NgbModule.forRoot(),
-    MatSidenavModule
+    MatSidenavModule,
+    AngularFontAwesomeModule
   ],
   bootstrap: [AppComponent]
 })

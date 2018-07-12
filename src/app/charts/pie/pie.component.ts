@@ -54,5 +54,4 @@ export class PieComponent {
   onLegendLabelClick(entry) {
     console.log('Legend clicked', entry);
   }
-
 }

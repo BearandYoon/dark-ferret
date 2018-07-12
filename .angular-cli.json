@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "stacked"
+    "name": "darkFerret"
   },
   "apps": [
     {
@@ -19,12 +19,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/font-awesome/css/font-awesome.css",
         "../node_modules/dragula/dist/dragula.css",
         "../node_modules/angular-calendar/scss/angular-calendar.scss",
         "../node_modules/@swimlane/ngx-datatable/release/index.css",
         "assets/fonts/ionicons/ionicons.css",
         "assets/fonts/data-table/icons.css",
-        "assets/styles/app.scss"
+        "assets/styles/app.scss",
+        "assets/styles/scss/circle.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
