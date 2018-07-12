@@ -29,7 +29,8 @@
   }
   .card .card-header,
   .card .card-footer {
-    color: map-get($foreground, base);
+    color: map-get($foreground, header);
+    font-size: 16px;
   }
   .card-header::after {
     border-bottom-color: map-get($foreground, divider);

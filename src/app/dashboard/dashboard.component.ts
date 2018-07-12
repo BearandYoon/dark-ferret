@@ -18,7 +18,6 @@ export class DashboardComponent {
   single: any[];
   multi: any[];
   dateData: any[];
-  dateDataWithRange: any[];
   graph: { links: any[], nodes: any[] };
   range = false;
 
@@ -35,8 +34,6 @@ export class DashboardComponent {
   barPadding = 8;
   groupPadding = 16;
   roundDomains = false;
-  maxRadius = 10;
-  minRadius = 3;
 
   // line interpolation
   curve = shape.curveBasis;
@@ -88,17 +85,7 @@ export class DashboardComponent {
       multi
     });
 
-    this.dateData = generateData(2, false);
-    this.dateDataWithRange = generateData(2, true);
-  }
-
-  get dateDataWithOrWithoutRange() {
-    if (this.range) {
-      return this.dateDataWithRange;
-    } else {
-      return this.dateData;
-    }
-
+    this.dateData = generateData(4, false);
   }
 
   select(data) {
