@@ -51,30 +51,30 @@ export class DashboardComponent {
   autoScale = true;
   timeline = false;
 
-  allPosts = [{
+  allPosts = {
     name: 'All Posts',
     value: 2814,
-    percentage: 50,
+    percentage: 'p50',
     color: '#4f6f18'
-  }];
-  twitterPosts = [{
+  };
+  twitterPosts = {
     name: 'Twitter Posts',
     value: 1350,
-    percentage: 35,
+    percentage: 'p35',
     color: '#3e5574'
-  }];
-  facebookPosts = [{
+  };
+  facebookPosts = {
     name: 'Facebook Posts',
     value: 430,
-    percentage: 13,
+    percentage: 'p13',
     color: '#44569c'
-  }];
-  instagramPosts = [{
+  };
+  instagramPosts = {
     name: 'Instagram Posts',
     value: 1034,
-    percentage: 40,
+    percentage: 'p40',
     color: '#c03395'
-  }];
+  };
 
   lat = -34.397;
   lng = 150.644;

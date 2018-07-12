@@ -13,6 +13,17 @@
 .content-center {
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  .post-comment {
+    padding: 20px;
+    color: #999999;
+    font-size: 17px;
+
+    .title {
+      font-size: 12px;
+    }
+  }
 }
 
 .green {

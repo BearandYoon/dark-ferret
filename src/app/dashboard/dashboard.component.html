@@ -3,12 +3,20 @@
     <div class="card">
       <div class="card-body px-0 py-4 rounded-bottom">
         <div class="content-center">
-          <div class="c100 p90 green">
+          <div class="c100 green" [ngClass]="allPosts.percentage">
             <span class="fa fa-quote-right"></span>
             <div class="slice">
               <div class="bar"></div>
               <div class="fill"></div>
             </div>
+          </div>
+          <div class="post-comment">
+            <p class="title">
+              {{allPosts.name}}
+            </p>
+            <p class="posts">
+              {{allPosts.value | number:'2.'}}
+            </p>
           </div>
         </div>
       </div>
@@ -18,27 +26,20 @@
     <div class="card">
       <div class="card-body px-0 py-4 rounded-bottom">
         <div class="content-center">
-          <div class="c100 p90 dark-blue">
+          <div class="c100 dark-blue" [ngClass]="twitterPosts.percentage">
             <span class="fa fa-twitter"></span>
             <div class="slice">
               <div class="bar"></div>
               <div class="fill"></div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <div class="card">
-      <div class="card-body px-0 py-4  rounded-bottom">
-        <div class="content-center">
-          <div class="c100 p90 blue">
-            <span class="fa fa-facebook"></span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
-            </div>
+          <div class="post-comment">
+            <p class="title">
+              {{twitterPosts.name}}
+            </p>
+            <p class="posts">
+              {{twitterPosts.value | number:'2.'}}
+            </p>
           </div>
         </div>
       </div>
@@ -48,12 +49,43 @@
     <div class="card">
       <div class="card-body px-0 py-4  rounded-bottom">
         <div class="content-center">
-          <div class="c100 p90 pink">
+          <div class="c100 blue" [ngClass]="facebookPosts.percentage">
+            <span class="fa fa-facebook"></span>
+            <div class="slice">
+              <div class="bar"></div>
+              <div class="fill"></div>
+            </div>
+          </div>
+          <div class="post-comment">
+            <p class="title">
+              {{facebookPosts.name}}
+            </p>
+            <p class="posts">
+              {{facebookPosts.value | number:'2.'}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-3">
+    <div class="card">
+      <div class="card-body px-0 py-4  rounded-bottom">
+        <div class="content-center">
+          <div class="c100 pink" [ngClass]="instagramPosts.percentage">
             <span class="fa fa-instagram"></span>
             <div class="slice">
               <div class="bar"></div>
               <div class="fill"></div>
             </div>
+          </div>
+          <div class="post-comment">
+            <p class="title">
+              {{instagramPosts.name}}
+            </p>
+            <p class="posts">
+              {{instagramPosts.value | number:'2.'}}
+            </p>
           </div>
         </div>
       </div>
