@@ -53,34 +53,28 @@ export class DashboardComponent {
 
   allPosts = [{
     name: 'All Posts',
-    value: 2814
+    value: 2814,
+    percentage: 50,
+    color: '#4f6f18'
   }];
   twitterPosts = [{
     name: 'Twitter Posts',
-    value: 1350
+    value: 1350,
+    percentage: 35,
+    color: '#3e5574'
   }];
   facebookPosts = [{
     name: 'Facebook Posts',
-    value: 430
+    value: 430,
+    percentage: 13,
+    color: '#44569c'
   }];
   instagramPosts = [{
     name: 'Instagram Posts',
-    value: 1034
+    value: 1034,
+    percentage: 40,
+    color: '#c03395'
   }];
-  totalPosts = 5000;
-
-  allPostColorScheme = {
-    domain: ['#4f6f18']
-  };
-  twitterPostColorScheme = {
-    domain: ['#3e5574']
-  };
-  facebookPostColorScheme = {
-    domain: ['#44569c']
-  };
-  instagramPostColorScheme = {
-    domain: ['#c03395']
-  };
 
   lat = -34.397;
   lng = 150.644;

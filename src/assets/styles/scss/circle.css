@@ -68,10 +68,10 @@
   width: 100%;
   z-index: 1;
   left: 0;
-  top: 0;
-  width: 5em;
+  top: -0.8em;
+  /* width: 5em; */
   line-height: 5em;
-  font-size: 0.2em;
+  font-size: 0.3em;
   /* color: #6c6d6f; */
   display: block;
   text-align: center;
@@ -826,8 +826,8 @@
   cursor: default;
 }
 .c100:hover > span {
-  width: 3.33em;
-  line-height: 3.33em;
+  /* width: 3.33em; */
+  /* line-height: 3.33em; */
   font-size: 0.3em;
   color: #307bbb;
 }
@@ -853,11 +853,13 @@
 .c100.dark:hover > span {
   color: #c6ff00;
 }
+
 .c100.green .bar, .c100.green .fill {
   border-color: #4db53c !important;
 }
-.c100.green:hover > span {
-  color: #4db53c;
+.c100.green:hover .bar, .c100.green:hover .fill, .c100.green:hover > span {
+  color: #359426;
+  border-color: #359426 !important;
 }
 .c100.green.dark .bar, .c100.green.dark .fill {
   border-color: #5fd400 !important;
@@ -865,6 +867,7 @@
 .c100.green.dark:hover > span {
   color: #5fd400;
 }
+
 .c100.orange .bar, .c100.orange .fill {
   border-color: #dd9d22 !important;
 }
@@ -876,4 +879,47 @@
 }
 .c100.orange.dark:hover > span {
   color: #e08833;
+}
+
+.c100.pink .bar, .c100.pink .fill {
+  border-color: #c03395 !important;
+}
+.c100.pink:hover .bar, .c100.pink:hover .fill, .c100.pink:hover > span {
+  color: #a5237d;
+  border-color: #a5237d !important;
+}
+.c100.pink.dark .bar, .c100.pink.dark .fill {
+  border-color: #e08833 !important;
+}
+.c100.pink.dark:hover .bar, .c100.pink.dark:hover .fill, .c100.pink.dark:hover > span {
+  color: #e08833;
+  border-color: #e08833 !important;
+}
+
+.c100.dark-blue .bar, .c100.dark-blue .fill {
+  border-color: #3f597b !important;
+}
+.c100.dark-blue:hover .bar, .c100.dark-blue:hover .fill, .c100.dark-blue:hover > span {
+  color: #3e5574;
+  border-color: #3e5574 !important;
+}
+.c100.dark-blue.dark .bar, .c100.dark-blue.dark .fill {
+  border-color: #2e4461 !important;
+}
+.c100.dark-blue.dark:hover > span {
+  color: #2d4461;
+}
+
+.c100.blue .bar, .c100.blue .fill {
+  border-color: #307bbb !important;
+}
+.c100.blue:hover .bar, .c100.blue:hover .fill, .c100.blue:hover > span {
+  color: #1c66a7;
+  border-color: #1c66a7 !important;
+}
+.c100.blue.dark .bar, .c100.blue.dark .fill {
+  border-color: #1c66a7 !important;
+}
+.c100.blue.dark:hover > span {
+  color: #1c66a7;
 }
